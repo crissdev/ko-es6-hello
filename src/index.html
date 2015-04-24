@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+
+    <title>Simple Hello World using Knockout Components and ES6</title>
+</head>
+<body layout="column" layout-fill>
+    <!--ko component: {name: 'cko-fork-ribbon'}--><!--/ko-->
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <span>ES6 &amp; KO Components</span>
+        </div>
+    </md-toolbar>
+
+
+    <div layout-align="center center" layout="column" flex>
+        <cko-hello params="message: 'Hello World!'"></cko-hello>
+    </div>
+
+
+<script src="../jspm_packages/system.js"></script>
+<script src="../config.js"></script>
+<script>System.import('app/index').catch(console.log.bind(console));</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "ko-es6-hello",
+  "private": true,
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "babel": "npm:babel@^5.1.11",
+      "knockout": "npm:knockout@^3.3.0",
+      "systemjs/plugin-text": "github:systemjs/plugin-text@^0.0.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.11",
+      "babel-runtime": "npm:babel-runtime@^5.1.11",
+      "core-js": "npm:core-js@^0.8.4"
+    }
+  },
+  "scripts": {
+    "start": "live-server --open=src/index.html --port=9090 ./",
+    "postinstall": "jspm install"
+  },
+  "devDependencies": {
+    "jspm": "^0.15.4",
+    "live-server": "^0.7.1"
+  }
+}
